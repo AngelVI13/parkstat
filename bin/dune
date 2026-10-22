@@ -1,4 +1,6 @@
 (executable
  (public_name parkstat)
  (name main)
- (libraries parkstat unix threads.posix core core_unix.time_ns_unix))
+ (libraries parkstat unix threads.posix core core_unix.sys_unix core_unix.time_ns_unix)
+ (preprocess
+  (pps ppx_jane)))
