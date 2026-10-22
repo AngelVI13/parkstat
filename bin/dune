@@ -1,0 +1,4 @@
+(executable
+ (public_name parkstat)
+ (name main)
+ (libraries parkstat unix threads.posix core core_unix.time_ns_unix))
